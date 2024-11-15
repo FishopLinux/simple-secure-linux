@@ -5,7 +5,7 @@ This script is designed to automate the hardening of a Linux server by applying 
 - System updates
 - Securing SSH
 - Configuring a firewall
-- Running security tools like **Lynis**, **chkrootkit**, and **rkhunter**
+- Running security tools like **Lynis**, and **rkhunter**
 
 ## Dependencies
 
@@ -13,7 +13,6 @@ Before running this script, ensure the following dependencies are installed on y
 
 ### Required tools:
 - **Lynis**: Security auditing tool
-- **chkrootkit**: Rootkit detection tool
 - **rkhunter**: Rootkit hunter tool
 - **ufw**: Firewall configuration tool
 
@@ -26,7 +25,7 @@ Before running the script, you need to install the required dependencies. The sc
 If you are using a distribution based on **Ubuntu** or **Debian**, use the following commands to install the dependencies:
 
 ```bash
-sudo apt update && sudo apt install -y lynis chkrootkit rkhunter ufw
+sudo apt update && sudo apt install -y lynis rkhunter ufw
 ```
 
 ### For CentOS / Red Hat / Fedora:
@@ -34,7 +33,7 @@ sudo apt update && sudo apt install -y lynis chkrootkit rkhunter ufw
 If you are using a distribution based on **CentOS**, **Red Hat**, or **Fedora**, use `dnf` to install the tools:
 
 ```bash
-sudo dnf install -y lynis chkrootkit rkhunter ufw
+sudo dnf install -y lynis rkhunter ufw
 ```
 
 ### For Arch Linux / Manjaro / EndeavourOS:
@@ -42,7 +41,7 @@ sudo dnf install -y lynis chkrootkit rkhunter ufw
 If you are using a distribution based on **Arch Linux**, **Manjaro**, or **EndeavourOS**, use `pacman` to install the dependencies:
 
 ```bash
-sudo pacman -Syu --noconfirm lynis chkrootkit rkhunter ufw
+sudo pacman -Syu --noconfirm lynis rkhunter ufw
 ```
 
 ## Installation Steps
