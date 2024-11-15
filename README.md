@@ -5,7 +5,7 @@ This script is designed to automate the hardening of a Linux server by applying 
 - System updates
 - Securing SSH
 - Configuring a firewall
-- Running security tools like **Lynis**, and **rkhunter**
+- Running security tools like **Lynis**, and more in the future
 
 ## Dependencies
 
