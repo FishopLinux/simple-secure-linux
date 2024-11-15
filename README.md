@@ -61,5 +61,5 @@ sudo pacman -Syu --noconfirm lynis rkhunter ufw
 3. Run the script:
 
     ```bash
-    ./main.sh
+    sudo ./main.sh
     ```
