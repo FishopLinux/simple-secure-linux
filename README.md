@@ -1,35 +1,48 @@
-# Guide de Sécurisation Linux
+Linux Security Guide
 
-Ce script est conçu pour automatiser la sécurisation d'un serveur Linux en appliquant des pratiques simples de sécurité. Il vérifie et configure divers aspects de votre système, tels que la mise à jour du système, la sécurisation de SSH, la configuration d'un pare-feu, et l'exécution d'outils de sécurité tels que **Lynis**, **chkrootkit**, et **rkhunter**.
+This script is designed to automate the hardening of a Linux server by applying simple security practices. It checks and configures various aspects of your system, such as system updates, securing SSH, configuring a firewall, and running security tools like Lynis, chkrootkit, and rkhunter.
+Dependencies
 
-## Dépendances
+Before running this script, make sure that the following dependencies are installed on your system. The script automatically detects your operating system and installs the necessary tools.
+Required tools:
 
-Avant d'exécuter ce script, vous devez vous assurer que les dépendances suivantes sont installées sur votre système. Le script détecte automatiquement votre système d'exploitation et installe les outils nécessaires.
+    Lynis: Security auditing tool.
+    chkrootkit: Rootkit detection tool.
+    rkhunter: Rootkit hunter tool.
+    ufw: Firewall configuration tool.
 
-### Outils requis :
-1. **Lynis** : Outil d'audit de sécurité.
-2. **chkrootkit** : Outil de détection de rootkits.
-3. **rkhunter** : Outil de détection de rootkits.
-4. **ufw** : Outil pour configurer un pare-feu.
-   
-Installation des dépendances selon votre système d'exploitation
+Installation of dependencies based on your operating system
 
-Avant d'exécuter le script, vous devez installer les dépendances nécessaires. Le script détecte automatiquement votre distribution et installe les outils requis.
-Pour Ubuntu/Debian :
+Before running the script, you need to install the required dependencies. The script will automatically detect your distribution and install the necessary tools.
+For Ubuntu/Debian:
 
-Si vous utilisez une distribution basée sur Ubuntu ou Debian, utilisez les commandes suivantes pour installer les dépendances :
+If you are using a distribution based on Ubuntu or Debian, use the following commands to install the dependencies:
 
-``sudo apt update
-sudo apt install -y lynis chkrootkit rkhunter ufw``
+`sudo apt update && sudo apt install -y lynis chkrootkit rkhunter ufw`
 
-Pour CentOS / Red Hat / Fedora :
+For CentOS / Red Hat / Fedora:
 
-Si vous utilisez une distribution basée sur CentOS, Red Hat ou Fedora, utilisez dnf pour installer les outils :
+If you are using a distribution based on CentOS, Red Hat, or Fedora, use dnf to install the tools:
 
-``sudo dnf install -y lynis chkrootkit rkhunter ufw``
+`sudo dnf install -y lynis chkrootkit rkhunter ufw`
 
-Pour Arch Linux / Manjaro / EndeavourOS :
+For Arch Linux / Manjaro / EndeavourOS:
 
-Si vous utilisez une distribution basée sur Arch Linux, Manjaro, ou EndeavourOS, utilisez pacman pour installer les dépendances :
+If you are using a distribution based on Arch Linux, Manjaro, or EndeavourOS, use pacman to install the dependencies:
 
-``sudo pacman -Syu --noconfirm lynis chkrootkit rkhunter ufw``
+`sudo pacman -Syu --noconfirm lynis chkrootkit rkhunter ufw`
+
+Installation
+
+    Clone the repository or download the script:
+
+`git clone https://github.com/FishopLinux/simple-secure-linux.git
+cd simple-secure-linux`
+
+    Make the script executable:
+
+`chmod +x main.sh`
+
+    Run the script:
+
+`./main.sh`
