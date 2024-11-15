@@ -1,4 +1,4 @@
-# Linux Security Guide
+# Very Basic and Simple Linux Security Check
 
 This script is designed to automate the hardening of a Linux server by applying simple security practices. It checks and configures various aspects of your system, such as:
 
