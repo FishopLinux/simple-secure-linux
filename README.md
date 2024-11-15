@@ -32,17 +32,13 @@ If you are using a distribution based on Arch Linux, Manjaro, or EndeavourOS, us
 
 `sudo pacman -Syu --noconfirm lynis chkrootkit rkhunter ufw`
 
-Installation
+Installation :
 
-    Clone the repository or download the script:
+Clone the repository or download the script:
+    `git clone https://github.com/FishopLinux/simple-secure-linux.git && cd simple-secure-linux`
 
-`git clone https://github.com/FishopLinux/simple-secure-linux.git
-cd simple-secure-linux`
+Make the script executable:
+    `chmod +x main.sh`
 
-    Make the script executable:
-
-`chmod +x main.sh`
-
-    Run the script:
-
-`./main.sh`
+Run the script:
+    `./main.sh`
